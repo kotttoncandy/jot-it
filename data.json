@@ -1,0 +1,22 @@
+{
+    "journal": [
+        {
+            "text": "wdwdwdw <br><hr><div id=\"reflect\"><h4>Reflection:<button id=\"reflectButton\">press-here-to-auto-generate</button></h4></div><br>",
+            "name": "Journal 1",
+            "reflection": "",
+            "prompt": "",
+            "score": 0
+        },
+        {
+            "text": "hello world <br><hr> <div id=\"reflect\"><h4>Reflection:<button id=\"reflectButton\">press-here-to-auto-generate</button></h4></div><br>",
+            "name": "Journal 2",
+            "reflection": "",
+            "prompt": "sdadasdasdad",
+            "score": 0
+    
+        }
+    ],
+    "moods": [
+
+    ]
+}

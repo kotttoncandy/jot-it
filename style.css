@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --pico-background-color: black;
+    font-family: "Merriweather", serif !important;
+    font-size: large;
+}
+
+#container h1 {
+    
+}
+
+p {
+    padding: 10px;
+}
+
+
+#journalData {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    transform: translateX(-50%);
+}
+
+body {
+    color: #ffffff;
+    --pico-font-weight: 400;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#journals {
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Adjust the gap between items */
+    justify-content: flex-start; /* Or use 'center', 'space-between', etc. */    align-items: center;
+    width: 100%;
+    padding: 20px;
+    height: 30%;
+    padding-top: 43px;
+    background-color: #191c23;
+    top: 82%;
+    place-content: center;
+}
+
+.journalsHide {
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.journalsShow {
+    transform: translateX(0);
+}
+
+#journal {
+    width: 125%;
+    background-color: #383f4f;
+    height: 80%;
+    border-radius: 10px;
+    padding: 30px;
+    border-color: #383f4f;
+    transform: translate(-10%, -30px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #e0e3e7;
+    font-size: 20px;
+    
+}
+
+#reflectExpand{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    left: 90%;
+    top: 50%;
+}
+
+.showReflect {
+    transform: translateX(100%);
+
+}
+.hideReflect {
+    transform: translateX(400%);
+    transition: all 2s;
+
+}
+
+
+
+#reflectButton {
+    z-index: 10;
+    font-size: 20px;
+    color: white;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+
+
+#title {
+    position: relative;
+    padding: 20px;
+    padding-left: 30px;
+    width: 15%;
+}
+
+#reflection {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    top:5%;
+    left: 40%;
+    border-radius: 20px;
+    background-color: #171717;
+    padding: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hidden {
+    filter: blur(2px);
+    transform: translateX(200%);
+    transition: all 2s;
+}
+
+.journalButton {
+    flex: 0 0 100px; /* Width of each item */
+    height: 100px; /* Adjust height as needed */
+    height: 100px;
+    width: 100px;
+}
+
+#home {
+    flex: 0 0 100px; /* Width of each item */
+    height: 100px; /* Adjust height as needed */
+    width: 100px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+#homeButton {
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, -50%);
+
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 10;
+}
+
+#homeImage {
+    position: relative;
+    left: 35px;
+    top: 0px;
+
+}
+
+#homeText {
+    position: relative;
+    width: 80px;
+    top: -15px;
+    left: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.homeTextHidden {
+    width: 0px !important;
+    transition: all 1s;
+}
+
+.homeTextShow {
+    width: 120px !important;
+
+}
+
+.show {
+    transform: translateX(100%);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.xButton {
+    position: fixed;
+    z-index: 10;
+    left: 85%;
+    top: 1%;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+.journalText {
+    position: relative;
+    top: -10%;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;    
+}
+
+.journalHide {
+    width: 0px !important;
+    transition: 1s;
+}
+
+.journalShow {
+    width: 150px !important;
+    transition: 1s;
+}
+
+#journalsButton {
+    position: absolute;
+}
+
+
+
+.journalImage {
+    position: relative;
+    left: 35px
+}
+
+.journalPress {
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, -50%);
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 10;
+}
+
+#container {
+    position: relative;
+    background-color: #383f4f;
+    width: 101%;
+    height: 101%;
+    border-radius: 10px;
+}
+
+.journalElement {
+    transform: translateY(-60%);
+}
+
+.journalsButton {
+    opacity: 0;
+}
+
+#prompt {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    height: 230px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: #191c23;
+    border-radius: 40px;
+
+
+}
+
+
+#prompt h1 {
+    transform: translate(0, 100%);
+    font-family: "Merriweather", serif !important;
+
+}
+
+.data h2 {
+    font-family: "Merriweather", serif !important;
+
+}
+
+#newJournal h3 {
+    font-family: "Merriweather", serif !important;
+
+}
+
+#mood h3 {
+    font-family: "Merriweather", serif !important;
+   
+}
+
+#mood button {
+    font-family: "Merriweather", serif !important;
+   
+}
+
+.promptHide {
+    transform: translate(-50%, -100%) !important;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68, -0.10);
+}
+
+.promptShow {
+    transform: translate(-50%, -30%) !important;
+
+}
+
+#dataPage {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; /* Adjust the gap between items */
+    justify-content: center; /* Or use 'center', 'space-between', etc. */
+    width: 100%;
+    height: 100%;
+}
+
+.data {
+    position: relative;
+    background-color: #191c23;
+    width: 400px;
+    height: 400px;
+    flex: 0 0 500px; /* Width of each item */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#newJournal {
+    position: relative;
+    height: 100px;
+    flex: 0 0 500px; /* Width of each item */
+    border-radius: 20px;
+    padding: 10px;  
+    text-align: center;
+    background-color: #191c23;
+
+}
+
+#mood {
+    position: absolute;
+    width: 500px;
+    height: 275px;
+    left: 53.5%;
+    top: 15%;
+    flex: 0 0 500px; /* Width of each item */
+    border-radius: 20px;
+    padding: 10px;  
+    text-align: center;
+    background-color: #191c23;
+}
+
+
+#moodButtons button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px; /* Width of each item */
+    border-radius: 20px;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+#journalPrompt {
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: #e0e3e7;
+
+}
+
+#journalTitle {
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: #e0e3e7;
+
+}
+
+#reflect h4 {
+    font-family: "Merriweather", serif;
+    color: #e0e3e7;
+    font-weight: 800;
+}
+
